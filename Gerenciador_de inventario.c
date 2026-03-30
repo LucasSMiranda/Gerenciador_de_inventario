@@ -2,6 +2,9 @@
 
 int main() 
 {
+
+    //Declarar as váriaveis
+
     char produtoA[30] = "Produto A";
     char produtoB[30] = "Produto B";
 
@@ -14,6 +17,10 @@ int main()
     double valorTotalA;
     double valorTotalB;
 
+    //Exibir as informações dos produtos
+
+    printf("Produto %s tem estoque %u e o valor unitário é %f.", produtoA, estoqueA, valorA);
+    printf("Produto %s tem estoque %u e o valor unitário é %f.", produtoB, estoqueB, valorB);
 
 
 
