@@ -20,10 +20,20 @@ int main()
     double valorTotalA;
     double valorTotalB;
 
+    int resultadoA, resultadoB;
+
     //Exibir as informações dos produtos
 
     printf("Produto %s tem estoque %u e o valor unitário é R$%.2f.\n", produtoA, estoqueA, valorA);
     printf("Produto %s tem estoque %u e o valor unitário é R$%.2f.\n", produtoB, estoqueB, valorB);
+
+    //Comparações com o valor mínimo de estoque
+
+    resultadoA = estoqueA > estoqueMinimoA;
+    resultadoB = estoqueB > estoqueminimoB;
+
+    printf("O produto %s tem estoque mínimo %d\n", produtoA, resultadoA);
+    printf("O produto %s tem estoque mínimo %d\n", produtoB, resultadoB);    
 
 
 
